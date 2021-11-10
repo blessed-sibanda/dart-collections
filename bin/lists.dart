@@ -109,6 +109,10 @@ void listsExercises() {
   print(months);
   final unmodifiableMonths = List.unmodifiable(months);
   print(unmodifiableMonths);
+  final bigMonths = [
+    for (var month in unmodifiableMonths) month.toString().toUpperCase()
+  ];
+  print(bigMonths);
 }
 
 void lists() {
